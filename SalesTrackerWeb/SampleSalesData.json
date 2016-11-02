@@ -1,0 +1,824 @@
+﻿{ "SalesTransactions":
+[
+  {
+    "Date": "2016-09-02",
+    "TotalNumberOfUnits": 39,
+    "AverageUnitPrice": "$255.06",
+    "TotalTax": "$207.76",
+    "TotalDiscount": "$109.10",
+    "TotalProductSales": "$3,132.60",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,897.08"
+  },
+  {
+    "Date": "2016-09-01",
+    "TotalNumberOfUnits": 31,
+    "AverageUnitPrice": "$265.05",
+    "TotalTax": "$181.03",
+    "TotalDiscount": "$340.76",
+    "TotalProductSales": "$1,742.30",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$2,893.13"
+  },
+  {
+    "Date": "2016-09-04",
+    "TotalNumberOfUnits": 33,
+    "AverageUnitPrice": "$370.10",
+    "TotalTax": "$110.15",
+    "TotalDiscount": "$263.27",
+    "TotalProductSales": "$2,008.17",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$3,336.84"
+  },
+  {
+    "Date": "2016-09-06",
+    "TotalNumberOfUnits": 29,
+    "AverageUnitPrice": "$219.58",
+    "TotalTax": "$344.67",
+    "TotalDiscount": "$356.30",
+    "TotalProductSales": "$1,318.48",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,571.39"
+  },
+  {
+    "Date": "2016-09-07",
+    "TotalNumberOfUnits": 34,
+    "AverageUnitPrice": "$217.71",
+    "TotalTax": "$367.00",
+    "TotalDiscount": "$232.03",
+    "TotalProductSales": "$3,292.72",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$2,874.36"
+  },
+  {
+    "Date": "2016-09-09",
+    "TotalNumberOfUnits": 27,
+    "AverageUnitPrice": "$235.50",
+    "TotalTax": "$313.82",
+    "TotalDiscount": "$174.83",
+    "TotalProductSales": "$1,674.85",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,964.53"
+  },
+  {
+    "Date": "2016-09-11",
+    "TotalNumberOfUnits": 24,
+    "AverageUnitPrice": "$211.05",
+    "TotalTax": "$229.43",
+    "TotalDiscount": "$374.32",
+    "TotalProductSales": "$2,824.90",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$2,747.85"
+  },
+  {
+    "Date": "2016-09-12",
+    "TotalNumberOfUnits": 19,
+    "AverageUnitPrice": "$342.74",
+    "TotalTax": "$176.14",
+    "TotalDiscount": "$296.32",
+    "TotalProductSales": "$2,553.92",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,914.49"
+  },
+  {
+    "Date": "2016-09-13",
+    "TotalNumberOfUnits": 35,
+    "AverageUnitPrice": "$128.80",
+    "TotalTax": "$287.72",
+    "TotalDiscount": "$126.25",
+    "TotalProductSales": "$2,794.53",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,154.66"
+  },
+  {
+    "Date": "2016-09-14",
+    "TotalNumberOfUnits": 31,
+    "AverageUnitPrice": "$378.38",
+    "TotalTax": "$306.20",
+    "TotalDiscount": "$369.35",
+    "TotalProductSales": "$3,407.66",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$3,754.62"
+  },
+  {
+    "Date": "2016-09-15",
+    "TotalNumberOfUnits": 33,
+    "AverageUnitPrice": "$124.77",
+    "TotalTax": "$111.99",
+    "TotalDiscount": "$119.92",
+    "TotalProductSales": "$2,836.83",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$2,253.21"
+  },
+  {
+    "Date": "2016-09-16",
+    "TotalNumberOfUnits": 28,
+    "AverageUnitPrice": "$155.99",
+    "TotalTax": "$113.52",
+    "TotalDiscount": "$177.03",
+    "TotalProductSales": "$1,988.42",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$3,493.30"
+  },
+  {
+    "Date": "2016-09-18",
+    "TotalNumberOfUnits": 30,
+    "AverageUnitPrice": "$164.32",
+    "TotalTax": "$390.88",
+    "TotalDiscount": "$260.64",
+    "TotalProductSales": "$2,404.05",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$2,826.74"
+  },
+  {
+    "Date": "2016-09-19",
+    "TotalNumberOfUnits": 13,
+    "AverageUnitPrice": "$102.19",
+    "TotalTax": "$238.97",
+    "TotalDiscount": "$164.44",
+    "TotalProductSales": "$2,516.88",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$3,917.83"
+  },
+  {
+    "Date": "2016-09-20",
+    "TotalNumberOfUnits": 39,
+    "AverageUnitPrice": "$354.37",
+    "TotalTax": "$237.60",
+    "TotalDiscount": "$291.44",
+    "TotalProductSales": "$2,885.53",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$3,784.03"
+  },
+  {
+    "Date": "2016-09-21",
+    "TotalNumberOfUnits": 9,
+    "AverageUnitPrice": "$309.06",
+    "TotalTax": "$243.57",
+    "TotalDiscount": "$103.51",
+    "TotalProductSales": "$3,064.31",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$2,297.76"
+  },
+  {
+    "Date": "2016-09-22",
+    "TotalNumberOfUnits": 35,
+    "AverageUnitPrice": "$240.21",
+    "TotalTax": "$238.44",
+    "TotalDiscount": "$199.02",
+    "TotalProductSales": "$1,935.41",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$3,699.27"
+  },
+  {
+    "Date": "2016-09-08",
+    "TotalNumberOfUnits": 29,
+    "AverageUnitPrice": "$252.77",
+    "TotalTax": "$132.81",
+    "TotalDiscount": "$349.91",
+    "TotalProductSales": "$1,176.69",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$2,444.33"
+  },
+  {
+    "Date": "2016-09-23",
+    "TotalNumberOfUnits": 19,
+    "AverageUnitPrice": "$115.55",
+    "TotalTax": "$222.13",
+    "TotalDiscount": "$253.93",
+    "TotalProductSales": "$1,441.60",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$3,347.98"
+  },
+  {
+    "Date": "2016-09-24",
+    "TotalNumberOfUnits": 25,
+    "AverageUnitPrice": "$384.41",
+    "TotalTax": "$192.73",
+    "TotalDiscount": "$362.63",
+    "TotalProductSales": "$2,035.41",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,106.74"
+  },
+  {
+    "Date": "2015-12-25",
+    "TotalNumberOfUnits": 17,
+    "AverageUnitPrice": "$325.08",
+    "TotalTax": "$214.70",
+    "TotalDiscount": "$345.52",
+    "TotalProductSales": "$3,974.60",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$2,832.61"
+  },
+  {
+    "Date": "2016-02-16",
+    "TotalNumberOfUnits": 23,
+    "AverageUnitPrice": "$299.00",
+    "TotalTax": "$120.82",
+    "TotalDiscount": "$210.11",
+    "TotalProductSales": "$1,204.83",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,438.79"
+  },
+  {
+    "Date": "2016-05-15",
+    "TotalNumberOfUnits": 29,
+    "AverageUnitPrice": "$164.29",
+    "TotalTax": "$397.46",
+    "TotalDiscount": "$150.99",
+    "TotalProductSales": "$3,100.70",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$2,456.74"
+  },
+  {
+    "Date": "2015-12-13",
+    "TotalNumberOfUnits": 27,
+    "AverageUnitPrice": "$101.86",
+    "TotalTax": "$190.71",
+    "TotalDiscount": "$152.28",
+    "TotalProductSales": "$1,507.24",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,197.39"
+  },
+  {
+    "Date": "2015-12-30",
+    "TotalNumberOfUnits": 9,
+    "AverageUnitPrice": "$246.65",
+    "TotalTax": "$267.09",
+    "TotalDiscount": "$187.16",
+    "TotalProductSales": "$1,356.20",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,686.80"
+  },
+  {
+    "Date": "2016-05-08",
+    "TotalNumberOfUnits": 39,
+    "AverageUnitPrice": "$136.55",
+    "TotalTax": "$384.99",
+    "TotalDiscount": "$125.25",
+    "TotalProductSales": "$1,432.56",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,102.20"
+  },
+  {
+    "Date": "2016-01-19",
+    "TotalNumberOfUnits": 39,
+    "AverageUnitPrice": "$247.91",
+    "TotalTax": "$320.94",
+    "TotalDiscount": "$168.40",
+    "TotalProductSales": "$3,448.64",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,412.13"
+  },
+  {
+    "Date": "2016-06-21",
+    "TotalNumberOfUnits": 31,
+    "AverageUnitPrice": "$261.70",
+    "TotalTax": "$145.67",
+    "TotalDiscount": "$267.79",
+    "TotalProductSales": "$1,511.78",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$3,820.13"
+  },
+  {
+    "Date": "2016-07-14",
+    "TotalNumberOfUnits": 40,
+    "AverageUnitPrice": "$153.31",
+    "TotalTax": "$195.23",
+    "TotalDiscount": "$157.36",
+    "TotalProductSales": "$3,385.08",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,495.84"
+  },
+  {
+    "Date": "2015-12-16",
+    "TotalNumberOfUnits": 9,
+    "AverageUnitPrice": "$213.23",
+    "TotalTax": "$370.02",
+    "TotalDiscount": "$252.03",
+    "TotalProductSales": "$1,932.53",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$2,285.75"
+  },
+  {
+    "Date": "2016-06-26",
+    "TotalNumberOfUnits": 9,
+    "AverageUnitPrice": "$262.50",
+    "TotalTax": "$112.75",
+    "TotalDiscount": "$234.40",
+    "TotalProductSales": "$2,998.17",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$2,408.81"
+  },
+  {
+    "Date": "2016-07-27",
+    "TotalNumberOfUnits": 28,
+    "AverageUnitPrice": "$186.99",
+    "TotalTax": "$202.76",
+    "TotalDiscount": "$349.57",
+    "TotalProductSales": "$2,661.80",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,737.31"
+  },
+  {
+    "Date": "2016-02-10",
+    "TotalNumberOfUnits": 18,
+    "AverageUnitPrice": "$103.68",
+    "TotalTax": "$364.99",
+    "TotalDiscount": "$252.93",
+    "TotalProductSales": "$2,036.06",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$2,306.07"
+  },
+  {
+    "Date": "2015-12-28",
+    "TotalNumberOfUnits": 21,
+    "AverageUnitPrice": "$101.05",
+    "TotalTax": "$342.76",
+    "TotalDiscount": "$288.78",
+    "TotalProductSales": "$3,168.70",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$3,164.35"
+  },
+  {
+    "Date": "2016-06-18",
+    "TotalNumberOfUnits": 34,
+    "AverageUnitPrice": "$314.84",
+    "TotalTax": "$233.51",
+    "TotalDiscount": "$132.71",
+    "TotalProductSales": "$3,656.54",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$2,378.61"
+  },
+  {
+    "Date": "2016-09-10",
+    "TotalNumberOfUnits": 10,
+    "AverageUnitPrice": "$149.04",
+    "TotalTax": "$376.31",
+    "TotalDiscount": "$205.09",
+    "TotalProductSales": "$3,350.67",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,818.19"
+  },
+  {
+    "Date": "2016-05-17",
+    "TotalNumberOfUnits": 38,
+    "AverageUnitPrice": "$370.43",
+    "TotalTax": "$340.49",
+    "TotalDiscount": "$299.87",
+    "TotalProductSales": "$2,387.51",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,974.38"
+  },
+  {
+    "Date": "2016-01-26",
+    "TotalNumberOfUnits": 18,
+    "AverageUnitPrice": "$139.26",
+    "TotalTax": "$322.71",
+    "TotalDiscount": "$140.44",
+    "TotalProductSales": "$3,193.75",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$3,537.34"
+  },
+  {
+    "Date": "2016-04-25",
+    "TotalNumberOfUnits": 22,
+    "AverageUnitPrice": "$114.42",
+    "TotalTax": "$207.85",
+    "TotalDiscount": "$305.75",
+    "TotalProductSales": "$1,221.30",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$3,001.14"
+  },
+  {
+    "Date": "2016-06-27",
+    "TotalNumberOfUnits": 25,
+    "AverageUnitPrice": "$209.83",
+    "TotalTax": "$217.63",
+    "TotalDiscount": "$204.66",
+    "TotalProductSales": "$2,415.55",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$3,657.99"
+  },
+  {
+    "Date": "2016-09-05",
+    "TotalNumberOfUnits": 16,
+    "AverageUnitPrice": "$362.12",
+    "TotalTax": "$271.83",
+    "TotalDiscount": "$178.62",
+    "TotalProductSales": "$1,347.92",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$1,312.05"
+  },
+  {
+    "Date": "2016-05-04",
+    "TotalNumberOfUnits": 13,
+    "AverageUnitPrice": "$149.41",
+    "TotalTax": "$270.58",
+    "TotalDiscount": "$336.46",
+    "TotalProductSales": "$1,612.31",
+    "Product": "Mouse",
+    "TotalServiceSales": "$1,005.40"
+  },
+  {
+    "Date": "2016-07-28",
+    "TotalNumberOfUnits": 11,
+    "AverageUnitPrice": "$302.88",
+    "TotalTax": "$370.47",
+    "TotalDiscount": "$130.24",
+    "TotalProductSales": "$2,721.08",
+    "Product": "Mouse",
+    "TotalServiceSales": "$1,334.96"
+  },
+  {
+    "Date": "2015-12-27",
+    "TotalNumberOfUnits": 24,
+    "AverageUnitPrice": "$194.62",
+    "TotalTax": "$105.53",
+    "TotalDiscount": "$315.04",
+    "TotalProductSales": "$1,165.42",
+    "Product": "Mouse",
+    "TotalServiceSales": "$1,446.13"
+  },
+  {
+    "Date": "2016-09-03",
+    "TotalNumberOfUnits": 35,
+    "AverageUnitPrice": "$386.99",
+    "TotalTax": "$148.46",
+    "TotalDiscount": "$388.10",
+    "TotalProductSales": "$1,319.97",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$3,480.39"
+  },
+  {
+    "Date": "2016-01-23",
+    "TotalNumberOfUnits": 16,
+    "AverageUnitPrice": "$379.43",
+    "TotalTax": "$285.19",
+    "TotalDiscount": "$121.45",
+    "TotalProductSales": "$3,152.31",
+    "Product": "Mouse",
+    "TotalServiceSales": "$1,794.66"
+  },
+  {
+    "Date": "2016-05-06",
+    "TotalNumberOfUnits": 26,
+    "AverageUnitPrice": "$262.14",
+    "TotalTax": "$360.31",
+    "TotalDiscount": "$255.11",
+    "TotalProductSales": "$2,018.29",
+    "Product": "Mouse",
+    "TotalServiceSales": "$1,085.72"
+  },
+  {
+    "Date": "2016-05-07",
+    "TotalNumberOfUnits": 29,
+    "AverageUnitPrice": "$214.69",
+    "TotalTax": "$324.40",
+    "TotalDiscount": "$278.32",
+    "TotalProductSales": "$3,189.97",
+    "Product": "Mouse",
+    "TotalServiceSales": "$2,846.69"
+  },
+  {
+    "Date": "2016-09-17",
+    "TotalNumberOfUnits": 11,
+    "AverageUnitPrice": "$105.55",
+    "TotalTax": "$328.94",
+    "TotalDiscount": "$249.60",
+    "TotalProductSales": "$1,812.57",
+    "Product": "Keyboard",
+    "TotalServiceSales": "$2,697.03"
+  },
+  {
+    "Date": "2016-06-07",
+    "TotalNumberOfUnits": 35,
+    "AverageUnitPrice": "$166.67",
+    "TotalTax": "$226.56",
+    "TotalDiscount": "$132.66",
+    "TotalProductSales": "$3,342.00",
+    "Product": "Mouse",
+    "TotalServiceSales": "$1,303.12"
+  },
+  {
+    "Date": "2016-01-17",
+    "TotalNumberOfUnits": 29,
+    "AverageUnitPrice": "$130.03",
+    "TotalTax": "$115.75",
+    "TotalDiscount": "$302.16",
+    "TotalProductSales": "$3,973.35",
+    "Product": "Mouse",
+    "TotalServiceSales": "$1,620.05"
+  },
+  {
+    "Date": "2016-05-28",
+    "TotalNumberOfUnits": 19,
+    "AverageUnitPrice": "$395.08",
+    "TotalTax": "$326.06",
+    "TotalDiscount": "$263.89",
+    "TotalProductSales": "$3,911.26",
+    "Product": "Mouse",
+    "TotalServiceSales": "$3,473.00"
+  },
+  {
+    "Date": "2016-01-04",
+    "TotalNumberOfUnits": 39,
+    "AverageUnitPrice": "$345.96",
+    "TotalTax": "$386.79",
+    "TotalDiscount": "$226.79",
+    "TotalProductSales": "$1,158.77",
+    "Product": "Mouse",
+    "TotalServiceSales": "$1,294.92"
+  },
+  {
+    "Date": "2016-08-17",
+    "TotalNumberOfUnits": 11,
+    "AverageUnitPrice": "$122.13",
+    "TotalTax": "$153.11",
+    "TotalDiscount": "$100.84",
+    "TotalProductSales": "$2,976.89",
+    "Product": "Mouse",
+    "TotalServiceSales": "$3,529.45"
+  },
+  {
+    "Date": "2016-05-05",
+    "TotalNumberOfUnits": 23,
+    "AverageUnitPrice": "$292.62",
+    "TotalTax": "$329.17",
+    "TotalDiscount": "$144.40",
+    "TotalProductSales": "$2,632.15",
+    "Product": "Mouse",
+    "TotalServiceSales": "$3,458.18"
+  },
+  {
+    "Date": "2016-03-10",
+    "TotalNumberOfUnits": 29,
+    "AverageUnitPrice": "$125.75",
+    "TotalTax": "$155.94",
+    "TotalDiscount": "$120.89",
+    "TotalProductSales": "$1,417.39",
+    "Product": "Mouse",
+    "TotalServiceSales": "$1,639.77"
+  },
+  {
+    "Date": "2016-01-24",
+    "TotalNumberOfUnits": 8,
+    "AverageUnitPrice": "$285.16",
+    "TotalTax": "$168.88",
+    "TotalDiscount": "$265.56",
+    "TotalProductSales": "$2,426.45",
+    "Product": "Mouse",
+    "TotalServiceSales": "$1,190.50"
+  },
+  {
+    "Date": "2016-03-09",
+    "TotalNumberOfUnits": 16,
+    "AverageUnitPrice": "$126.91",
+    "TotalTax": "$234.03",
+    "TotalDiscount": "$361.93",
+    "TotalProductSales": "$2,778.28",
+    "Product": "Mouse",
+    "TotalServiceSales": "$3,410.06"
+  },
+  {
+    "Date": "2016-08-10",
+    "TotalNumberOfUnits": 35,
+    "AverageUnitPrice": "$216.28",
+    "TotalTax": "$302.50",
+    "TotalDiscount": "$293.72",
+    "TotalProductSales": "$3,343.62",
+    "Product": "Mouse",
+    "TotalServiceSales": "$3,133.51"
+  },
+  {
+    "Date": "2016-08-12",
+    "TotalNumberOfUnits": 19,
+    "AverageUnitPrice": "$345.43",
+    "TotalTax": "$161.13",
+    "TotalDiscount": "$335.49",
+    "TotalProductSales": "$1,725.49",
+    "Product": "Mouse",
+    "TotalServiceSales": "$2,457.12"
+  },
+  {
+    "Date": "2016-03-07",
+    "TotalNumberOfUnits": 16,
+    "AverageUnitPrice": "$131.89",
+    "TotalTax": "$347.93",
+    "TotalDiscount": "$239.16",
+    "TotalProductSales": "$2,318.15",
+    "Product": "Monitor",
+    "TotalServiceSales": "$3,863.75"
+  },
+  {
+    "Date": "2016-02-11",
+    "TotalNumberOfUnits": 28,
+    "AverageUnitPrice": "$300.90",
+    "TotalTax": "$374.68",
+    "TotalDiscount": "$145.62",
+    "TotalProductSales": "$1,894.53",
+    "Product": "Monitor",
+    "TotalServiceSales": "$3,738.28"
+  },
+  {
+    "Date": "2016-01-15",
+    "TotalNumberOfUnits": 24,
+    "AverageUnitPrice": "$129.16",
+    "TotalTax": "$107.39",
+    "TotalDiscount": "$249.67",
+    "TotalProductSales": "$3,439.28",
+    "Product": "Monitor",
+    "TotalServiceSales": "$3,993.88"
+  },
+  {
+    "Date": "2016-06-04",
+    "TotalNumberOfUnits": 28,
+    "AverageUnitPrice": "$287.21",
+    "TotalTax": "$288.90",
+    "TotalDiscount": "$352.99",
+    "TotalProductSales": "$3,261.22",
+    "Product": "Monitor",
+    "TotalServiceSales": "$1,994.41"
+  },
+  {
+    "Date": "2016-07-17",
+    "TotalNumberOfUnits": 22,
+    "AverageUnitPrice": "$183.23",
+    "TotalTax": "$363.82",
+    "TotalDiscount": "$218.07",
+    "TotalProductSales": "$3,348.25",
+    "Product": "Monitor",
+    "TotalServiceSales": "$1,029.80"
+  },
+  {
+    "Date": "2015-12-11",
+    "TotalNumberOfUnits": 15,
+    "AverageUnitPrice": "$148.67",
+    "TotalTax": "$272.23",
+    "TotalDiscount": "$113.95",
+    "TotalProductSales": "$2,676.07",
+    "Product": "Monitor",
+    "TotalServiceSales": "$2,767.82"
+  },
+  {
+    "Date": "2016-05-01",
+    "TotalNumberOfUnits": 33,
+    "AverageUnitPrice": "$161.74",
+    "TotalTax": "$292.94",
+    "TotalDiscount": "$384.99",
+    "TotalProductSales": "$1,113.88",
+    "Product": "Monitor",
+    "TotalServiceSales": "$2,736.95"
+  },
+  {
+    "Date": "2016-03-28",
+    "TotalNumberOfUnits": 28,
+    "AverageUnitPrice": "$162.38",
+    "TotalTax": "$327.60",
+    "TotalDiscount": "$357.91",
+    "TotalProductSales": "$3,012.93",
+    "Product": "Monitor",
+    "TotalServiceSales": "$2,186.16"
+  },
+  {
+    "Date": "2016-07-16",
+    "TotalNumberOfUnits": 24,
+    "AverageUnitPrice": "$365.46",
+    "TotalTax": "$389.89",
+    "TotalDiscount": "$371.38",
+    "TotalProductSales": "$2,857.53",
+    "Product": "Monitor",
+    "TotalServiceSales": "$1,290.35"
+  },
+  {
+    "Date": "2016-06-08",
+    "TotalNumberOfUnits": 17,
+    "AverageUnitPrice": "$312.60",
+    "TotalTax": "$301.64",
+    "TotalDiscount": "$258.04",
+    "TotalProductSales": "$2,466.85",
+    "Product": "Monitor",
+    "TotalServiceSales": "$3,812.99"
+  },
+  {
+    "Date": "2016-08-28",
+    "TotalNumberOfUnits": 34,
+    "AverageUnitPrice": "$308.99",
+    "TotalTax": "$202.01",
+    "TotalDiscount": "$269.25",
+    "TotalProductSales": "$2,434.09",
+    "Product": "Monitor",
+    "TotalServiceSales": "$3,221.47"
+  },
+  {
+    "Date": "2016-02-13",
+    "TotalNumberOfUnits": 12,
+    "AverageUnitPrice": "$234.62",
+    "TotalTax": "$338.69",
+    "TotalDiscount": "$117.19",
+    "TotalProductSales": "$2,520.53",
+    "Product": "Monitor",
+    "TotalServiceSales": "$2,377.58"
+  },
+  {
+    "Date": "2016-07-22",
+    "TotalNumberOfUnits": 39,
+    "AverageUnitPrice": "$312.13",
+    "TotalTax": "$229.65",
+    "TotalDiscount": "$247.20",
+    "TotalProductSales": "$1,479.42",
+    "Product": "Monitor",
+    "TotalServiceSales": "$1,192.35"
+  },
+  {
+    "Date": "2016-01-05",
+    "TotalNumberOfUnits": 28,
+    "AverageUnitPrice": "$364.52",
+    "TotalTax": "$117.60",
+    "TotalDiscount": "$324.14",
+    "TotalProductSales": "$2,997.96",
+    "Product": "Monitor",
+    "TotalServiceSales": "$2,148.82"
+  },
+  {
+    "Date": "2016-06-23",
+    "TotalNumberOfUnits": 32,
+    "AverageUnitPrice": "$383.13",
+    "TotalTax": "$353.35",
+    "TotalDiscount": "$162.37",
+    "TotalProductSales": "$1,971.56",
+    "Product": "Monitor",
+    "TotalServiceSales": "$2,375.85"
+  },
+  {
+    "Date": "2016-08-13",
+    "TotalNumberOfUnits": 14,
+    "AverageUnitPrice": "$240.60",
+    "TotalTax": "$178.66",
+    "TotalDiscount": "$181.07",
+    "TotalProductSales": "$3,592.68",
+    "Product": "Laptop",
+    "TotalServiceSales": "$3,914.48"
+  },
+  {
+    "Date": "2016-04-08",
+    "TotalNumberOfUnits": 12,
+    "AverageUnitPrice": "$277.31",
+    "TotalTax": "$146.94",
+    "TotalDiscount": "$373.22",
+    "TotalProductSales": "$2,506.70",
+    "Product": "Laptop",
+    "TotalServiceSales": "$3,292.96"
+  },
+  {
+    "Date": "2016-03-08",
+    "TotalNumberOfUnits": 25,
+    "AverageUnitPrice": "$148.60",
+    "TotalTax": "$147.59",
+    "TotalDiscount": "$231.93",
+    "TotalProductSales": "$3,342.57",
+    "Product": "Laptop",
+    "TotalServiceSales": "$2,287.59"
+  },
+  {
+    "Date": "2016-03-21",
+    "TotalNumberOfUnits": 37,
+    "AverageUnitPrice": "$284.87",
+    "TotalTax": "$320.35",
+    "TotalDiscount": "$241.67",
+    "TotalProductSales": "$2,407.44",
+    "Product": "Laptop",
+    "TotalServiceSales": "$1,837.81"
+  },
+  {
+    "Date": "2016-03-30",
+    "TotalNumberOfUnits": 24,
+    "AverageUnitPrice": "$144.82",
+    "TotalTax": "$212.52",
+    "TotalDiscount": "$104.31",
+    "TotalProductSales": "$2,410.63",
+    "Product": "Laptop",
+    "TotalServiceSales": "$1,969.99"
+  },
+  {
+    "Date": "2016-04-19",
+    "TotalNumberOfUnits": 30,
+    "AverageUnitPrice": "$230.41",
+    "TotalTax": "$358.36",
+    "TotalDiscount": "$265.04",
+    "TotalProductSales": "$3,224.00",
+    "Product": "Laptop",
+    "TotalServiceSales": "$1,031.31"
+  },
+  {
+    "Date": "2016-01-30",
+    "TotalNumberOfUnits": 28,
+    "AverageUnitPrice": "$345.81",
+    "TotalTax": "$342.51",
+    "TotalDiscount": "$266.83",
+    "TotalProductSales": "$3,297.19",
+    "Product": "Laptop",
+    "TotalServiceSales": "$2,260.78"
+  }
+]
+}

@@ -1,0 +1,289 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license.
+    See LICENSE in the project root for license information. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Excel add-in - Sales Tracker</title>
+  
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.6.1/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.6.1/fabric.components.min.css">
+   
+    <link href="Content/settings.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="Content/tab.bar.css">
+
+</head>
+<body class="ms-font-l ms-settings">
+    <nav class="ms-tab-bar__header ms-bgColor-themeLighter">
+        <div class="ms-tab-bar__header--center ms-font-m ms-fontWeight-light ms-fontColor-themePrimary">
+            <div class="ms-tab-bar__header--center"></div>
+            <span id="DateTab" class="DateTab">
+            <button class="ms-tab-bar__header--centeritems ms-font-m ms-fontWeight-light ms-fontColor-themePrimary">
+                <i class="ms-font-xl ms-Icon ms-Icon--home ms-fontColor-themePrimary"></i>
+                <div class="ms-tab-bar__header--centeritemstext">
+                    Home
+                </div>
+            </button>
+            </span>
+            <span id="TableTab" class="TableTab">
+            <button class="ms-tab-bar__header--centeritems ms-font-m ms-fontWeight-light ms-fontColor-themePrimary">
+                <i class="ms-font-xl ms-Icon ms-Icon--table ms-fontColor-themePrimary"></i>
+                <div class="ms-tab-bar__header--centeritemstext">
+                    Table
+                </div>
+            </button>
+                </span>
+            <span id="ChartTab" class="ChartTab">
+            <button class="ms-tab-bar__header--centeritems ms-font-m ms-fontWeight-light ms-fontColor-themePrimary">
+                <i class="ms-font-xl ms-Icon ms-Icon--chart ms-fontColor-themePrimary"></i>
+                <div class="ms-tab-bar__header--centeritemstext">
+                    Chart
+                </div>
+            </button>
+                </span>
+            
+            <div class="ms-tab-bar__header--center"></div>
+        </div>
+    </nav>
+    <main class="ms-settings__main">
+       
+        <section class="ms-settings__content ms-font-m ms-fontColor-neutralPrimary">
+
+            <div class="ms-firstrun-pages__content">
+                <div class="DateSettings">
+                    <div class="ms-font-xxl ms-settings__content__title">Home</div>
+                    <div class="ms-font-xl ms-settings__content__subtitle">Enter product and date</div>
+                    <div class="ms-TextField">
+                        <label class="ms-Label">Product name (optional)</label>
+                        <input id="product-name" class="ms-TextField-field" type="text" placeholder="Enter a product name.">
+                    </div>
+
+                    <div class="ms-DatePicker">
+                        <div class="ms-TextField">
+
+                            <label class="ms-Label">Starting date (optional)</label>
+                            <i class="ms-DatePicker-event ms-Icon ms-Icon--event"></i>
+                            <input id="start-date" class="ms-TextField-field" type="text" placeholder="Select a date…">
+                        </div>
+                        <div class="ms-DatePicker-monthComponents">
+                            <span class="ms-DatePicker-nextMonth js-nextMonth"><i class="ms-Icon ms-Icon--chevronRight"></i></span>
+                            <span class="ms-DatePicker-prevMonth js-prevMonth"><i class="ms-Icon ms-Icon--chevronLeft"></i></span>
+                        </div>
+                        <span class="ms-DatePicker-goToday js-goToday">Go to today</span>
+                    </div>
+
+                    <div id="product-data">
+
+                    </div>
+                    <button class="ms-Button ms-Button--primary" id="get-sales-button">
+                        <span class="ms-Button-label" id="button-text"></span>
+                        <span class="ms-Button-description" id="button-desc"></span>
+                    </button>
+                    <div class ="DataMessage ms-Label" id="txtNoDataFound"></div>
+                </div>
+                <div class="TableSettings undisplayed">
+                    <div class="ms-font-xxl ms-settings__content__title">Table options</div>
+
+                    <div class="ms-font-xl ms-settings__content__subtitle">Show/hide table columns</div>
+                    <div class="ms-ChoiceField">
+                        <input id="date" class="ms-ChoiceField-input column-selector" type="checkbox" checked="checked">
+                        <label for="date" class="ms-ChoiceField-field">
+                            <span class="ms-Label">Date</span>
+                        </label>
+                    </div>
+                    <div class="ms-ChoiceField">
+                        <input id="unitPrice" class="ms-ChoiceField-input column-selector" type="checkbox" checked="checked">
+                        <label for="unitPrice" class="ms-ChoiceField-field">
+                            <span class="ms-Label">Unit Price</span>
+                        </label>
+                    </div>
+                    <div class="ms-ChoiceField">
+                        <input id="avgUnitPrice" class="ms-ChoiceField-input column-selector" type="checkbox" checked="checked">
+                        <label for="avgUnitPrice" class="ms-ChoiceField-field">
+                            <span class="ms-Label">Average Unit Price</span>
+                        </label>
+                    </div>
+                    <div class="ms-ChoiceField">
+                        <input id="Tax" class="ms-ChoiceField-input column-selector" type="checkbox" checked="checked">
+                        <label for="Tax" class="ms-ChoiceField-field">
+                            <span class="ms-Label">Tax</span>
+                        </label>
+                    </div>
+                    <div class="ms-ChoiceField">
+                        <input id="Discount" class="ms-ChoiceField-input column-selector" type="checkbox" checked="checked">
+                        <label for="Discount" class="ms-ChoiceField-field">
+                            <span class="ms-Label">Discount</span>
+                        </label>
+                    </div>
+                    <div class="ms-ChoiceField">
+                        <input id="ProductSales" class="ms-ChoiceField-input column-selector" type="checkbox" checked="checked">
+                        <label for="ProductSales" class="ms-ChoiceField-field">
+                            <span class="ms-Label">Total Product Sales</span>
+                        </label>
+                    </div>
+                    <div class="ms-ChoiceField">
+                        <input id="ServiceSales" class="ms-ChoiceField-input column-selector" type="checkbox" checked="checked">
+                        <label for="ServiceSales" class="ms-ChoiceField-field">
+                            <span class="ms-Label">Total Service Sales</span>
+                        </label>
+                    </div>
+
+                    <div class="ms-font-xl ms-settings__content__subtitle">Change the table color</div>
+                    <div class="ms-ChoiceFieldGroup">
+                        <div class="ms-ChoiceField testCSS">
+                            <input id="colorChoice-blue" value="blue" class="ms-ChoiceField-input" type="radio" name="colorChoice" checked="checked">
+                            <label for="colorChoice-blue" class="ms-ChoiceField-field">
+                                <span class="ms-Label">
+                                    <img class="ColorSwatch" src="Images/tablesCharts_Blue.png" /><span class="ColorVAlign">&nbsp;Blue</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="ms-ChoiceField">
+                            <input id="colorChoice-black" value="black" class="ms-ChoiceField-input" type="radio" name="colorChoice">
+                            <label for="colorChoice-black" class="ms-ChoiceField-field">
+                                <span class="ms-Label">
+                                    <img class="ColorSwatch" src="Images/tablesCharts_Black.png" /><span class="ColorVAlign">&nbsp;Black</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="ms-ChoiceField">
+                            <input id="colorChoice-gray" value="gray" class="ms-ChoiceField-input" type="radio" name="colorChoice">
+                            <label for="colorChoice-gray" class="ms-ChoiceField-field">
+                                <span class="ms-Label"><img class="ColorSwatch" src="Images/tablesCharts_Gray.png" /><span class="ColorVAlign">&nbsp;Gray</span></span>
+                            </label>
+                        </div>
+                        <div class="ms-ChoiceField">
+                            <input id="colorChoice-green" value="green" class="ms-ChoiceField-input" type="radio" name="colorChoice">
+                            <label for="colorChoice-green" class="ms-ChoiceField-field">
+                                <span class="ms-Label">
+                                    <img class="ColorSwatch" src="Images/tablesCharts_Green.png" />
+                                    <span class="ColorVAlign">&nbsp;Green</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="ms-ChoiceField">
+                            <input id="colorChoice-orange" value="orange" class="ms-ChoiceField-input" type="radio" name="colorChoice">
+                            <label for="colorChoice-orange" class="ms-ChoiceField-field">
+                                <span class="ms-Label"><img class="ColorSwatch" src="Images/tablesCharts_Orange.png" /><span class="ColorVAlign">&nbsp;Orange</span></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="ChartSettings undisplayed">
+                    <div class="ms-font-xxl ms-settings__content__title">Chart options</div>
+                    <div class="ms-font-xl ms-settings__content__subtitle">Chart data source</div>
+                    <div class="ms-ChoiceFieldGroup">
+                        <div class="ms-ChoiceField">
+                            <input id="chartDataSource-totalNumberOfUnits" value="totalNumberOfUnits" class="ms-ChoiceField-input" type="radio" name="chartDataSource">
+                            <label for="chartDataSource-totalNumberOfUnits" class="ms-ChoiceField-field">
+                                <span class="ms-Label">Total Number of Units</span>
+                            </label>
+                        </div>
+                        <div class="ms-ChoiceField">
+                            <input id="chartDataSource-averageUnitPrice" value="averageUnitPrice" class="ms-ChoiceField-input" type="radio" name="chartDataSource">
+                            <label for="chartDataSource-averageUnitPrice" class="ms-ChoiceField-field">
+                                <span class="ms-Label">Average Unit Price</span>
+                            </label>
+                        </div>
+                        <div class="ms-ChoiceField">
+                            <input id="chartDataSource-totalTax" value="totalTax" class="ms-ChoiceField-input" type="radio" name="chartDataSource">
+                            <label for="chartDataSource-totalTax" class="ms-ChoiceField-field">
+                                <span class="ms-Label">Total Tax</span>
+                            </label>
+                        </div>
+                        <div class="ms-ChoiceField">
+                            <input id="chartDataSource-totalDiscount" value="totalDiscount" class="ms-ChoiceField-input" type="radio" name="chartDataSource">
+                            <label for="chartDataSource-totalDiscount" class="ms-ChoiceField-field">
+                                <span class="ms-Label">Total Discount</span>
+                            </label>
+                        </div>
+                        <div class="ms-ChoiceField">
+                            <input id="chartDataSource-totalProductSales" value="totalProductSales" class="ms-ChoiceField-input" type="radio" name="chartDataSource" checked="checked">
+                            <label for="chartDataSource-totalProductSales" class="ms-ChoiceField-field">
+                                <span class="ms-Label">Total Product Sales</span>
+                            </label>
+                        </div>
+                        <div class="ms-ChoiceField">
+                            <input id="chartDataSource-totalServiceSales" value="totalServiceSales" class="ms-ChoiceField-input" type="radio" name="chartDataSource">
+                            <label for="chartDataSource-totalServiceSales" class="ms-ChoiceField-field">
+                                <span class="ms-Label">Total Service Sales</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="ms-font-xl ms-settings__content__subtitle">Chart type</div>
+                    <div class="ms-ChoiceFieldGroup">
+                        <div class="ms-ChoiceField">
+                            <input id="chartType-line" value="line" class="ms-ChoiceField-input" type="radio" name="chartType" checked="checked">
+                            <label for="chartType-line" class="ms-ChoiceField-field">
+                                <span class="ms-Label">Line</span>
+                            </label>
+                        </div>
+                        <div class="ms-ChoiceField">
+                            <input id="chartType-column" value="column" class="ms-ChoiceField-input" type="radio" name="chartType">
+                            <label for="chartType-column" class="ms-ChoiceField-field">
+                                <span class="ms-Label">Column</span>
+                            </label>
+                        </div>
+                        <div class="ms-ChoiceField">
+                            <input id="chartType-area" value="area" class="ms-ChoiceField-input" type="radio" name="chartType">
+                            <label for="chartType-area" class="ms-ChoiceField-field">
+                                <span class="ms-Label">Area</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="ms-font-xl ms-settings__content__subtitle">Chart color theme</div>
+                    <div class="ms-ChoiceFieldGroup">
+                        <div class="ms-ChoiceField ChartRadio">
+                            <input id="chartColorChoice-white" value="white" class="ms-ChoiceField-input" type="radio" name="chartColorChoice" checked="checked">
+                            <label for="chartColorChoice-white" class="ms-ChoiceField-field">
+                                <span class="ms-Label">
+                                    <img class="ChartColorSwatch ChartColorVAlign" src="Images/Charts_whiteBackground.png" />
+                                    <span>White background</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="ms-ChoiceField ChartRadio">
+                            <input id="chartColorChoice-gray" value="gray" class="ms-ChoiceField-input" type="radio" name="chartColorChoice">
+                            <label for="chartColorChoice-gray" class="ms-ChoiceField-field">
+                                <span class="ms-Label">
+                                    <img class="ChartColorSwatch ChartColorVAlign" src="Images/Charts_grayBackground.png" />
+                                    <span>Gray background</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="ms-ChoiceField ChartRadio">
+                            <input id="chartColorChoice-blue" value="blue" class="ms-ChoiceField-input" type="radio" name="chartColorChoice">
+                            <label for="chartColorChoice-blue" class="ms-ChoiceField-field">
+                                <span class="ms-Label">
+                                    <img class="ChartColorSwatch ChartColorVAlign" src="Images/Charts_blueBackground.png" />
+                                    <span>Blue background</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer class="ms-settings__footer ms-bgColor-themePrimary">
+        <div class="ms-settings__footer--left">                
+            <h1 class="ms-font-xl ms-fontWeight-semilight ms-fontColor-white">Contoso</h1>
+        </div>
+    </footer>
+
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script>
+    <script src="Scripts/Fabric/fabric.min.js"></script>
+    <script src="Scripts/PickADate/picker.js"></script>
+    <script src="Scripts/PickADate/picker.date.js"></script>
+    <script src="Scripts/Helpers.js" type="text/javascript"></script>
+    <script src="Scripts/Home.js" type="text/javascript"></script>
+</body>
+</html>

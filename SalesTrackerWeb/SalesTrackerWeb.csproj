@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{399CEB85-D3F8-457F-8C1D-9B6147D6D555}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StockTrackerWeb</RootNamespace>
+    <AssemblyName>StockTrackerWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44361</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content\settings.css" />
+    <Content Include="Scripts\Helpers.js" />
+    <Content Include="Images\chartsTablesIcon.png" />
+    <Content Include="Images\chartsTablesIcon2.png" />
+    <Content Include="Images\tablesCharts_Black.png" />
+    <Content Include="Images\tablesCharts_Blue.png" />
+    <Content Include="Images\Charts_blueBackground.png" />
+    <Content Include="Images\tablesCharts_Gray.png" />
+    <Content Include="Images\Charts_grayBackground.png" />
+    <Content Include="Images\tablesCharts_Green.png" />
+    <Content Include="Images\tablesCharts_Orange.png" />
+    <Content Include="Images\Charts_whiteBackground.png" />
+    <Content Include="SampleSalesData.json" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Home.html" />
+    <Content Include="Scripts\Home.js" />
+    <Content Include="Scripts\Fabric\fabric.js" />
+    <Content Include="Scripts\Fabric\fabric.min.js" />
+    <Content Include="Scripts\Fabric\fabric.templates.js" />
+    <Content Include="Scripts\PickADate\legacy.js" />
+    <Content Include="Scripts\PickADate\picker.date.js" />
+    <Content Include="Scripts\PickADate\picker.js" />
+    <Content Include="Scripts\PickADate\picker.time.js" />
+    <Content Include="Scripts\PickADate\themes\classic.css" />
+    <Content Include="Scripts\PickADate\themes\classic.date.css" />
+    <Content Include="Scripts\PickADate\themes\classic.time.css" />
+    <Content Include="Scripts\PickADate\themes\default.css" />
+    <Content Include="Scripts\PickADate\themes\default.date.css" />
+    <Content Include="Scripts\PickADate\themes\default.time.css" />
+    <Content Include="Scripts\PickADate\themes\rtl.css" />
+    <Content Include="Scripts\PickADate\translations\ar.js" />
+    <Content Include="Scripts\PickADate\translations\bg_BG.js" />
+    <Content Include="Scripts\PickADate\translations\bs_BA.js" />
+    <Content Include="Scripts\PickADate\translations\ca_ES.js" />
+    <Content Include="Scripts\PickADate\translations\cs_CZ.js" />
+    <Content Include="Scripts\PickADate\translations\da_DK.js" />
+    <Content Include="Scripts\PickADate\translations\de_DE.js" />
+    <Content Include="Scripts\PickADate\translations\el_GR.js" />
+    <Content Include="Scripts\PickADate\translations\es_ES.js" />
+    <Content Include="Scripts\PickADate\translations\et_EE.js" />
+    <Content Include="Scripts\PickADate\translations\eu_ES.js" />
+    <Content Include="Scripts\PickADate\translations\fa_IR.js" />
+    <Content Include="Scripts\PickADate\translations\fi_FI.js" />
+    <Content Include="Scripts\PickADate\translations\fr_FR.js" />
+    <Content Include="Scripts\PickADate\translations\gl_ES.js" />
+    <Content Include="Scripts\PickADate\translations\he_IL.js" />
+    <Content Include="Scripts\PickADate\translations\hi_IN.js" />
+    <Content Include="Scripts\PickADate\translations\hr_HR.js" />
+    <Content Include="Scripts\PickADate\translations\hu_HU.js" />
+    <Content Include="Scripts\PickADate\translations\id_ID.js" />
+    <Content Include="Scripts\PickADate\translations\is_IS.js" />
+    <Content Include="Scripts\PickADate\translations\it_IT.js" />
+    <Content Include="Scripts\PickADate\translations\ja_JP.js" />
+    <Content Include="Scripts\PickADate\translations\ko_KR.js" />
+    <Content Include="Scripts\PickADate\translations\lt_LT.js" />
+    <Content Include="Scripts\PickADate\translations\lv_LV.js" />
+    <Content Include="Scripts\PickADate\translations\nb_NO.js" />
+    <Content Include="Scripts\PickADate\translations\ne_NP.js" />
+    <Content Include="Scripts\PickADate\translations\nl_NL.js" />
+    <Content Include="Scripts\PickADate\translations\no_NO.js" />
+    <Content Include="Scripts\PickADate\translations\pl_PL.js" />
+    <Content Include="Scripts\PickADate\translations\pt_BR.js" />
+    <Content Include="Scripts\PickADate\translations\pt_PT.js" />
+    <Content Include="Scripts\PickADate\translations\ro_RO.js" />
+    <Content Include="Scripts\PickADate\translations\ru_RU.js" />
+    <Content Include="Scripts\PickADate\translations\sk_SK.js" />
+    <Content Include="Scripts\PickADate\translations\sl_SI.js" />
+    <Content Include="Scripts\PickADate\translations\sv_SE.js" />
+    <Content Include="Scripts\PickADate\translations\th_TH.js" />
+    <Content Include="Scripts\PickADate\translations\tr_TR.js" />
+    <Content Include="Scripts\PickADate\translations\uk_UA.js" />
+    <Content Include="Scripts\PickADate\translations\vi_VN.js" />
+    <Content Include="Scripts\PickADate\translations\zh_CN.js" />
+    <Content Include="Scripts\PickADate\translations\zh_TW.js" />
+    <Content Include="Scripts\_officeintellisense.js" />
+    <Content Include="Content\tab.bar.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3850</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3850</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
