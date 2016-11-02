@@ -14,7 +14,7 @@ Learn how to programmatically format tables and charts, and how to import data t
 
 ## Change History
 
-October 1, 2016:
+November 2, 2016:
 
 * Initial version.
 
