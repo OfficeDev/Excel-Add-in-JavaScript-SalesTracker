@@ -16,6 +16,7 @@ Learn how to programmatically format tables and charts, and how to import data t
 
 November 2, 2016:
 
+* Updated code sample to use Fabric JS 1.2.0
 * Initial version.
 
 ## Prerequisites
