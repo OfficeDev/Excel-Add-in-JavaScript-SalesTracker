@@ -29,7 +29,7 @@
         var strTotalDiscountColumn = 'Discount';
         var strTotalProductSalesColumn = 'ProductSales';
         var strTotalServiceSalesColumn = 'ServiceSales';
-       
+
         // Object used to store chart settings.
         var chartSettings = {
             dataSourceDisplayed: strTotalProductSalesColumn,
@@ -44,9 +44,9 @@
             upperLeftCorner: 'J2',
             lowerRightCorner: 'O20'
         }
-        
+
         $(document).ready(function () {
-            
+
             $('#button-text').text("Get sales data");
             $('#button-desc').text("Gets the sales data.");
 
@@ -62,36 +62,65 @@
                 },
                 SalesTrackerApp.getSalesData);
             $('#start-date').change(SalesTrackerApp.setSelectedDate);
-            $('.column-selector').change(
+            $('.column-selector').children('input[type="checkbox"]').change(
                 {
                     tableName: tableName
                 },
                 SalesTrackerApp.toggleColumnVisibility);
-            $('[name=colorChoice]').click(
-                {
-                    tableName: tableName, strSalesSheet: strSalesSheet
-                },
-                SalesTrackerApp.setTableColor);
-            $('[name=chartColorChoice]').click(
-               {
-                   chartSettings: chartSettings
-               },
-               SalesTrackerApp.setChartColorTheme);
-            $('[name=chartType]').click(
-                {
-                    chartSettings: chartSettings, strTempTableName: strTempTableName,
-                    strSalesSheet: strSalesSheet, strDateColumn: strDateColumn
-                },
-                SalesTrackerApp.setChartType);
-            $('[name=chartDataSource]').click(
-                {
-                    strTempWorksheetName: strTempWorksheetName, strTempTableName: strTempTableName, chartSettings: chartSettings,
-                    strSalesSheet: strSalesSheet, strTotalNumberOfUnits: strTotalNumberOfUnits,
-                    strAverageUnitPriceColumn: strAverageUnitPriceColumn, strTotalTaxColumn: strTotalTaxColumn,
-                    strTotalDiscountColumn: strTotalDiscountColumn, strTotalProductSalesColumn: strTotalProductSalesColumn,
-                    strTotalServiceSalesColumn: strTotalServiceSalesColumn, strDateColumn: strDateColumn
-                },
-                SalesTrackerApp.setChartDataSource);
+
+            var colorRadios = $('.colorChoiceRadio');  // Uses CSS class to identify the radio buttons.
+            colorRadios.each(function () {
+                var _this = $(this);
+                var color = _this.siblings('input').val();  // Get the value from the input element.
+                _this.click(
+                    {
+                        tableName: tableName,
+                        strSalesSheet: strSalesSheet,
+                        color: color
+                    }, SalesTrackerApp.setTableColor);
+            });
+
+            var chartColorRadios = $('.chartColorThemeRadio');  // Uses CSS class to identify the radio buttons.
+            chartColorRadios.each(function () {
+                var _this = $(this);
+                var chartColor = _this.siblings('input').val();  // Get the value from the input element.
+                _this.click(
+                    {
+                        chartSettings: chartSettings,
+                        chartColor: chartColor
+                    }, SalesTrackerApp.setChartColorTheme);
+            });
+
+            var chartTypeRadio = $('.chartTypeRadio');  // Uses CSS class to identify the radio buttons.
+            chartTypeRadio.each(function () {
+                var _this = $(this);
+                var ctype = _this.siblings('input').val();  // Get the value from the input element.
+                _this.click(
+                    {
+                        chartSettings: chartSettings, strTempTableName: strTempTableName,
+                        strSalesSheet: strSalesSheet, strDateColumn: strDateColumn,
+                        ctype: ctype
+                    }, SalesTrackerApp.setChartType);
+            });
+
+
+
+            var chartDataSourceRadios = $('.chartDataSourceRadio');
+            chartDataSourceRadios.each(function () {
+                var _this = $(this);
+                var chartDataSource = _this.siblings('input').val();  // Get the value from the input element.
+                _this.click(
+                    {
+                        strTempWorksheetName: strTempWorksheetName, strTempTableName: strTempTableName, chartSettings: chartSettings,
+                        strSalesSheet: strSalesSheet, strTotalNumberOfUnits: strTotalNumberOfUnits,
+                        strAverageUnitPriceColumn: strAverageUnitPriceColumn, strTotalTaxColumn: strTotalTaxColumn,
+                        strTotalDiscountColumn: strTotalDiscountColumn, strTotalProductSalesColumn: strTotalProductSalesColumn,
+                        strTotalServiceSalesColumn: strTotalServiceSalesColumn, strDateColumn: strDateColumn,
+                        chartDataSource: chartDataSource
+                    }, SalesTrackerApp.setChartDataSource);
+            });
+
+
             $('#DateTab').click(SalesTrackerApp.newPage);
             $('#TableTab').click(SalesTrackerApp.newPage);
             $('#ChartTab').click(SalesTrackerApp.newPage);
@@ -101,11 +130,22 @@
                 new fabric['DatePicker'](DatePickerElements[i]);
             }
 
+            // Initialize all the checkboxes and keep a reference to them for use later.
+            SalesTrackerApp.CheckBoxElements = $(".column-selector").map(function () {
+                return new fabric['CheckBox'](this);
+            });
+
+            var ChoiceFieldGroupElements = document.querySelectorAll(".ms-ChoiceFieldGroup");
+            for (var i = 0; i < ChoiceFieldGroupElements.length; i++) {
+                new fabric['ChoiceFieldGroup'](ChoiceFieldGroupElements[i]);
+            }
+
+
             document.getElementById("ChartTab").hidden = true;
             document.getElementById("TableTab").hidden = true;
-        });      
+        });
 
-    } 
+    }
 
     window.SalesTrackerApp = SalesTrackerApp;
 })();

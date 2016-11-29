@@ -21,14 +21,18 @@
 
         // Ensures that all table data fields are selected in the UI. 
     SalesTrackerApp.reinitializeUI = function () {    
-        $("#date").prop('checked', true);
-        $("#unitPrice").prop('checked', true);
-        $("#avgUnitPrice").prop('checked', true);
-        $("#Tax").prop('checked', true);
-        $("#Discount").prop('checked', true);
-        $("#ProductSales").prop('checked', true);
-        $("#ServiceSales").prop('checked', true);
-        $("#colorChoice-blue").prop('checked', true);
+      
+        $.each(SalesTrackerApp.CheckBoxElements, function () {
+            this.check();  // Use the check method on the Office UI Fabric Checkbox component to check the checkbox.
+        });
+
+        var colorRadios = $('.colorChoiceRadio');  // Uses CSS class to identify the radio buttons.
+        colorRadios.each(function () {
+            var _this = $(this);
+            _this.removeClass('is-checked');
+        });
+        $("#colorChoice-blue").siblings('label').addClass('is-checked');
+        
     }
 
     SalesTrackerApp.setChartColorSettings = function (chartColor, fontColor, catFontColor, valFontColor, chartSettings) {
@@ -51,8 +55,7 @@
 
     SalesTrackerApp.setChartColorTheme = function (event) {
 
-        // Get ID of color radio button that was selected and read the theme choice from it.
-        var themeChoice = event.target.value;
+        var themeChoice = event.data.chartColor;
 
         Excel.run(function (ctx) {
 
@@ -105,8 +108,7 @@
 
     SalesTrackerApp.setChartDataSource = function (event) {
 
-        // Get ID of color radio button that was selected and read the data source choice from it.
-        var sourceChoice = event.target.value;
+        var sourceChoice = event.data.chartDataSource || 'totalProductSales';
 
         Excel.run(function (ctx) {
 
@@ -168,8 +170,7 @@
 
     SalesTrackerApp.setChartType = function (event) {
 
-        // Get ID of color radio button that was selected and read the type choice from it.
-        var typeChoice = event.target.value;
+        var typeChoice  = event.data.ctype || 'line';
 
         Excel.run(function (ctx) {
 
@@ -221,8 +222,7 @@
 
     SalesTrackerApp.setTableColor = function (event) {
 
-        // Get ID of color radio button that was selected and read the color choice from it.
-        var colorChoice = event.target.value;
+        var colorChoice = event.data.color || 'blue';
 
         // Need to create a binding for the table before you can change its style properties.
         var fullyQualifiedTableName = event.data.strSalesSheet + "!" + event.data.tableName;
@@ -268,6 +268,7 @@
                         console.log('Action failed. Error: ' + asyncResult.error.message);
                     }
                 });
+
             }
         })
     }
