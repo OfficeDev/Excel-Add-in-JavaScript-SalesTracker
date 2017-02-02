@@ -323,7 +323,7 @@
             pDate = '0' + pDate;
         }
         if (pMonth < 10) {
-            Month = '0' + pMonth;
+            pMonth = '0' + pMonth;
         }
 
         var pEndDate = '' + pYear + '-' + pMonth + '-' + pDate;
