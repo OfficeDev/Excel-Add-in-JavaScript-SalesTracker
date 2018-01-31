@@ -1,0 +1,21 @@
+### YamlMime:Sample
+sample:
+- name: Excel Web Add-in for Manipulating Table and Chart Formatting
+  path: ''
+  description: Display data in Excel tables and charts, and programmatically change the formatting of tables and charts.
+  readme: ''
+  generateZip: FALSE
+  isLive: TRUE
+  technologies:
+  - Office Add-in
+  azureDeploy: ''
+  author: rick-kirkham
+  platforms: []
+  languages:
+  - C#
+  - javascript
+  extensions:
+    products:
+    - Excel
+    - Excel for Mac
+    scenarios: []
