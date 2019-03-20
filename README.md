@@ -1,3 +1,19 @@
+---
+topic: sample
+products:
+- Excel
+- Excel for Mac
+- Office 365
+languages:
+- JavaScript
+- C#
+- javascript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 9/26/2016 2:05:38 PM
+---
 # Excel Web Add-in for Manipulating Table and Chart Formatting
 
 Learn how to programmatically format tables and charts, and how to import data to a spreadsheet, in Excel Web Add-ins. Compare with how these tasks are done in the [Tables and Charts](https://code.msdn.microsoft.com/VSTO-Generate-tables-and-f19859b3) VSTO Add-in. This Excel web add-in also shows how to use the design samples from [Office Add-in UX Design Patterns Code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code). 
