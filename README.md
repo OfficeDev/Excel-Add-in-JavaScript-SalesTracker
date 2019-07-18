@@ -1,12 +1,11 @@
 ---
 topic: sample
 products:
-- Excel
-- Excel for Mac
-- Office 365
+- office-excel
+- office-365
 languages:
-- JavaScript
-- C#
+- javascript
+- csharp
 - javascript
 extensions:
   contentType: samples
