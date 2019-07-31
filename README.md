@@ -1,19 +1,6 @@
----
-page_type: sample
-products:
-- office-excel
-- office-365
-languages:
-- javascript
-- csharp
-- javascript
-extensions:
-  contentType: samples
-  technologies:
-  - Add-ins
-  createdDate: 9/26/2016 2:05:38 PM
----
-# Excel Web Add-in for Manipulating Table and Chart Formatting
+# [ARCHIVED] Excel Web Add-in for Manipulating Table and Chart Formatting
+
+**Note:** This repo is archived and no longer actively maintained. Security vulnerabilities may exist in the project, or its dependencies. If you plan to reuse or run any code from this repo, be sure to perform appropriate security checks on the code or dependencies first. Do not use this project as the starting point of a production Office Add-in. Always start your production code by using the Office/SharePoint development workload in Visual Studio, or the [Yeoman generator for Office Add-ins](https://github.com/OfficeDev/generator-office), and follow security best practices as you develop the add-in. 
 
 Learn how to programmatically format tables and charts, and how to import data to a spreadsheet, in Excel Web Add-ins. Compare with how these tasks are done in the [Tables and Charts](https://code.msdn.microsoft.com/VSTO-Generate-tables-and-f19859b3) VSTO Add-in. This Excel web add-in also shows how to use the design samples from [Office Add-in UX Design Patterns Code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code). 
 
