@@ -1,6 +1,6 @@
 # Excel Web Add-in for Manipulating Table and Chart Formatting 
 
-Learn how to programmatically format tables and charts, and how to import data to a spreadsheet, in Excel Web Add-ins. Compare with how these tasks are done in the [Tables and Charts](https://code.msdn.microsoft.com/VSTO-Generate-tables-and-f19859b3) VSTO Add-in. This Excel web add-in also shows how to use the design samples from [Office Add-in UX Design Patterns Code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code). 
+Learn how to programmatically format tables and charts, and how to import data to a spreadsheet, in Excel Web Add-ins. Compare with how these tasks are done in the [Tables and Charts](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/VSTO%20-%20Generate%20tables%20and%20charts%20by%20using%20an%20Excel%20add-in) VSTO Add-in. This Excel web add-in also shows how to use the design samples from [Office Add-in UX Design Patterns Code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code). 
 
 ## Table of Contents
 * [Change History](#change-history)
@@ -70,7 +70,7 @@ The Office Fabric date picker control has a dependency on the PickADate library.
 
 The code that uses the Office and Word JavaScript APIs is in Home.js and Helpers.js. All of the styling is done with HTML5 and the stylesheet files: settings.css, tab.bar.css and several Office Fabric css files.
 
-Compare this code with the code in [Tables and Charts](https://code.msdn.microsoft.com/VSTO-Generate-tables-and-f19859b3). Note the following:
+Compare this code with the code in [Tables and Charts](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/VSTO%20-%20Generate%20tables%20and%20charts%20by%20using%20an%20Excel%20add-in). Note the following:
 
 
 - Excel Web add-ins are supported across several platforms including Windows, Mac, and Office Online. VSTO add-ins are only supported on Windows.
