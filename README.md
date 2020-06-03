@@ -72,7 +72,6 @@ The code that uses the Office and Word JavaScript APIs is in Home.js and Helpers
 
 Compare this code with the code in [Tables and Charts](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/VSTO%20-%20Generate%20tables%20and%20charts%20by%20using%20an%20Excel%20add-in). Note the following:
 
-
 - Excel Web add-ins are supported across several platforms including Windows, Mac, and Office Online. VSTO add-ins are only supported on Windows.
 - Changing the style of a table is similar in both VSTO and web add-ins. In both cases, your code assigns a style name, such as TableStyleMedium3 to a property. In the VSTO add-in, this is a table object. (See the various `*_CheckedChanged` methods in the TableAndChartPane.cs file.) In this web add-in, the property is in a JavaScript object that is passed to the `setTableOptionsAsync` function. (See the `setTableColor` function in the helpers.js file.)
 - Toggling the visibility of columns in a table is very similar in the VSTO and web add-ins. Compare the logic of the `ListObjectHeaders_Click` method in the VSTO sample with the `toggleColumnVisibility` function in the web add-in.
